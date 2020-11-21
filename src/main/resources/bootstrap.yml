@@ -1,9 +1,11 @@
-
 spring:
   application:
     name: registry-service
-  cloud:
-    config:
-      uri: https://configserverneightlink.herokuapp.com/
-      username: root
-      password: s3cr3t
+eureka:
+  instance:
+    prefer-ip-address: false
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enableSelfPreservation: false
